@@ -42,7 +42,7 @@ body{
     height: 30px;
 }
 
-.add-task {
+#add-task {
     border-radius: 6px;
     width: 60px;
     height: 35px;

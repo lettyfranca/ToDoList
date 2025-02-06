@@ -14,10 +14,8 @@
         <main>
 
             <p>Add new task</p>
-            <form action="task-form">
-                <input type="text" id="task-add" required>
-                <button type="submit" class="add-task">Add</button>
-            </form>
+            <input type="text" id="task-text" required>
+            <button type="submit" id="add-task">Add</button>
 
             <table>
                 <caption>Tasks</caption>
@@ -29,17 +27,11 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td class="checkbox-column"><input type="checkbox"></td>
-                    <td class="task-column">Task 1</td>
-                    <td class="action-column">
-                        <button class="edit-task">Edit</button>
-                        <button class="delete-task">Delete</button>
-                    </td>
-                </tr>
                 </tbody>
              </table>
         </main>
     </div>
 </body>
 </html>
+
+<script src="script.js"></script>
