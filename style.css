@@ -1,7 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 * {
     padding:0;
     margin:0;
-    vertical-align:baseline;
-    list-style:none;
-    border:0
+}
+
+body{
+    font-family: "Gloria Hallelujah", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(18, 36, 33);
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 30px;
+    width: 600px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container p {
+    font-size: 22px;
+    margin-left: 40px;
+}
+
+.container form {
+    margin-bottom: 10px;
+}
+
+.container input {
+    border-radius: 6px;
+    margin-left: 40px;
+    width: 400px;
+    height: 30px;
+}
+
+.add-task {
+    border-radius: 6px;
+    width: 60px;
+    height: 35px;
+    font-family: "Gloria Hallelujah", serif;
+    background-color: #8bffa8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+th {
+    text-align: left;
+    padding: 10px;
+    font-size: 20px;
+}
+
+td {
+    padding: 10px;
+    font-size: 15px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0; 
+}
+
+tr:hover td {
+    background-color: #b2caca;
+}
+
+th.task-column, td.task-column {
+    width: 60%; 
+}
+
+
+th.checkbox-column, td.checkbox-column {
+    width: 20%;
+}
+
+
+th.action-column, td.action-column {
+    width: 20%;
+}
+
+.edit-task {
+    border-radius: 6px;
+    width: 45px;
+    height: auto;
+    font-family: "Gloria Hallelujah", serif;
+    background-color: #fff38b;
+}
+
+.delete-task {
+    border-radius: 6px;
+    width: 45px;
+    height: auto;
+    font-family: "Gloria Hallelujah", serif;
+    background-color: #ff8b8b;
+}
+
+footer p{
+    font-size: 10px;
 }
