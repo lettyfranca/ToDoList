@@ -82,6 +82,11 @@ input[type="checkbox"] {
     margin: 0; 
 }
 
+tr:has(input[type="checkbox"]:checked) td {
+    text-decoration: line-through;
+    background-color: #87be95;
+}
+
 tr:hover td {
     background-color: #b2caca;
 }

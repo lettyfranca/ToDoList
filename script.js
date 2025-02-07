@@ -50,5 +50,18 @@ function addTask() {
     }
 }
 
-//adiciona ao botão o evento de adicionar task
+//adiciona ao botão os eventos
 btnAddTask.addEventListener('click', addTask);
+
+//botão de remover (não é possível usar a mesma ideia do add, pois o botão de deletar é criado dinamicamente com o JS)
+
+//adiciona um evento de clique a tabela
+tableBody.addEventListener('click', (event) => {
+    //verifica se existe algum elemento com a classe do botão del
+    if (event.target.classList.contains('delete-task')) {
+        //procura a linha mais próxima do elemento del
+        const row = event.target.closest('tr');
+        //remove essa linha
+        row.remove();
+    }
+})
